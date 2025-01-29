@@ -5,6 +5,7 @@ import logging
 from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.contrib.auth import get_user_model
+from django.contrib.auth.models import Group, Permission
 from django.db import models
 from utils.models import CommonFields
 
@@ -84,10 +85,7 @@ class UserDetails(CommonFields):
     last_login_time = models.DateTimeField(null=True, blank=True)
     last_login_ip = models.GenericIPAddressField(null=True, blank=True)
     login_count = models.PositiveIntegerField(default=0)
-    # Company & Multi-Tenancy Support
-    company_id = models.ForeignKey("company.Company", on_delete=models.SET_NULL, null=True, blank=True, related_name="users")
-    employee_id = models.ForeignKey("hr.Employee", on_delete=models.SET_NULL, null=True, blank=True, related_name="users")
-
+    # Company & Multi-Tenancy Support (will update in future)
     # Preferences
     language = models.CharField(max_length=10, default="en", choices=[("en", "English"), ("fr", "French"), ("es", "Spanish")])
     timezone = models.CharField(max_length=50, default="UTC")
