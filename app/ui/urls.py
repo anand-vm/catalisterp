@@ -1,0 +1,10 @@
+#catalisterp/app/ui/urls.py
+from django.urls import path
+from . import views
+
+app_name = 'ui'
+
+urlpatterns = [
+    path('', views.index, name='index'),
+
+]

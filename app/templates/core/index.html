@@ -1,0 +1,77 @@
+{# index.html #}
+{% extends "core/base.html" %}
+
+{% block content %}
+<section class="bg-white py-16">
+    <div class="container mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold text-gray-800">Welcome to CatalistERP</h2>
+        <p class="mt-4 text-gray-600">A modular, scalable, and customizable ERP solution tailored for your business needs.</p>
+        <div class="mt-6">
+            <a href="#features" class="bg-blue-500 text-white py-3 px-6 rounded-lg hover:bg-blue-600">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center text-gray-800">Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-indigo-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m0-4h.01M12 20h.01M12 4h.01M9 20h.01M9 4h.01M15 20h.01M15 4h.01M4 12h16" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-700">Dynamic Workflows</h4>
+                <p class="mt-2 text-gray-600">Customize workflows effortlessly to meet your unique business requirements.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-indigo-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-700">Modular Design</h4>
+                <p class="mt-2 text-gray-600">Add or remove modules based on your specific needs without disrupting the system.</p>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+                <div class="text-indigo-600 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11v1H3zM21 10h-6v1h6z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold text-gray-700">Scalable Architecture</h4>
+                <p class="mt-2 text-gray-600">Grow your business with a system that scales seamlessly with your operations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="modules" class="bg-white py-16">
+    <div class="container mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center text-gray-800">Core Modules</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+            <div class="bg-gray-100 shadow-lg rounded-lg p-6 text-center">
+                <h4 class="text-xl font-bold text-gray-700">CRM</h4>
+                <p class="mt-2 text-gray-600">Manage leads, customer interactions, and sales pipelines efficiently.</p>
+            </div>
+            <div class="bg-gray-100 shadow-lg rounded-lg p-6 text-center">
+                <h4 class="text-xl font-bold text-gray-700">Inventory</h4>
+                <p class="mt-2 text-gray-600">Track and manage your inventory with real-time updates.</p>
+            </div>
+            <div class="bg-gray-100 shadow-lg rounded-lg p-6 text-center">
+                <h4 class="text-xl font-bold text-gray-700">Accounts</h4>
+                <p class="mt-2 text-gray-600">Streamline financial operations with automated accounting features.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold text-gray-800">Contact Us</h3>
+        <p class="mt-4 text-gray-600">Have questions or need a demo? Get in touch with us today.</p>
+        <a href="mailto:info@catalistindia.in" class="bg-indigo-500 text-white py-3 px-6 rounded-lg hover:bg-indigo-600 mt-6 inline-block">Email Us</a>
+    </div>
+</section>
+{% endblock %}
